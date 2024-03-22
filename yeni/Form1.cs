@@ -1,14 +1,14 @@
 /****************************************************************************
-**					                SAKARYA ÜNÝVERSÝTESÝ
-**				          BÝLGÝSAYAR VE BÝLÝÞÝM BÝLÝMLERÝ FAKÜLTESÝ
-**				                BÝLGÝSAYAR MÜHENDÝSLÝÐÝ BÖLÜMÜ
-**				               NESNEYE DAYALI PROGRAMLAMA DERSÝ
-**					               2023-2024 BAHAR DÖNEMÝ
+**					                SAKARYA ÃœNÄ°VERSÄ°TESÄ°
+**				          BÄ°LGÄ°SAYAR VE BÄ°LÄ°ÅžÄ°M BÄ°LÄ°MLERÄ° FAKÃœLTESÄ°
+**				                BÄ°LGÄ°SAYAR MÃœHENDÄ°SLÄ°ÄžÄ° BÃ–LÃœMÃœ
+**				               NESNEYE DAYALI PROGRAMLAMA DERSÄ°
+**					               2023-2024 BAHAR DÃ–NEMÄ°
 **	
-**				ÖDEV NUMARASI..........: 1
-**				ÖÐRENCÝ ADI............: Tarýk Toplu
-**				ÖÐRENCÝ NUMARASI.......: G231210010
-**              DERSÝN ALINDIÐI GRUP...: A (ÝÖ)
+**				Ã–DEV NUMARASI..........: 1
+**				Ã–ÄžRENCÄ° ADI............: TarÄ±k Toplu
+**				Ã–ÄžRENCÄ° NUMARASI.......: 
+**              DERSÄ°N ALINDIÄžI GRUP...: A (Ä°Ã–)
 *
 ****************************************************************************/
 
@@ -41,10 +41,10 @@ namespace yeni
         }
         private void SetDefaultFont()
         {
-            // Windows Not Defteri'nin varsayýlan fontunu ve boyutunu kullanarak
+            // Windows Not Defteri'nin varsayÄ±lan fontunu ve boyutunu kullanarak
             Font defaultFont = new Font("Lucida Console,Regular", 10);
 
-            // RichTextBox'in varsayýlan fontunu ayarla
+            // RichTextBox'in varsayÄ±lan fontunu ayarla
             richTextBox1.Font = defaultFont;
         }
 
@@ -63,14 +63,14 @@ namespace yeni
             DosyaOlustur("cs");
         }
 
-        private void cDosyasýToolStripMenuItem_Click(object sender, EventArgs e)
+        private void cDosyasÄ±ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Eðer deðiþiklik yapýldýysa uyarý veriliyor
+            //EÄŸer deÄŸiÅŸiklik yapÄ±ldÄ±ysa uyarÄ± veriliyor
 
             if (DegisiklikYapildi)
             {
-                DialogResult result = MessageBox.Show("Dosyada kaydedilmemiþ deðiþiklikler var. Deðiþiklikleri kaydetmek istiyor musunuz?", "Uyarý", MessageBoxButtons.YesNoCancel);
-                //Evet derse kayýt ediliyor
+                DialogResult result = MessageBox.Show("Dosyada kaydedilmemiÅŸ deÄŸiÅŸiklikler var. DeÄŸiÅŸiklikleri kaydetmek istiyor musunuz?", "UyarÄ±", MessageBoxButtons.YesNoCancel);
+                //Evet derse kayÄ±t ediliyor
                 if (result == DialogResult.Yes)
                 {
                     Kaydet();
@@ -84,14 +84,14 @@ namespace yeni
             DosyaOlustur("cpp");
         }
 
-        private void cDosyasýToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void cDosyasÄ±ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            //Eðer deðiþiklik yapýldýysa uyarý veriliyor
+            //EÄŸer deÄŸiÅŸiklik yapÄ±ldÄ±ysa uyarÄ± veriliyor
 
             if (DegisiklikYapildi)
             {
-                DialogResult result = MessageBox.Show("Dosyada kaydedilmemiþ deðiþiklikler var. Deðiþiklikleri kaydetmek istiyor musunuz?", "Uyarý", MessageBoxButtons.YesNoCancel);
-                //Evet derse kayýt ediliyor
+                DialogResult result = MessageBox.Show("Dosyada kaydedilmemiÅŸ deÄŸiÅŸiklikler var. DeÄŸiÅŸiklikleri kaydetmek istiyor musunuz?", "UyarÄ±", MessageBoxButtons.YesNoCancel);
+                //Evet derse kayÄ±t ediliyor
                 if (result == DialogResult.Yes)
                 {
                     Kaydet();
@@ -106,12 +106,12 @@ namespace yeni
         }
         private void metinBelgesiToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Eðer deðiþiklik yapýldýysa uyarý veriliyor
+            //EÄŸer deÄŸiÅŸiklik yapÄ±ldÄ±ysa uyarÄ± veriliyor
             if (DegisiklikYapildi)
             {
-                DialogResult result = MessageBox.Show("Dosyada kaydedilmemiþ deðiþiklikler var. Deðiþiklikleri kaydetmek istiyor musunuz?", "Uyarý", MessageBoxButtons.YesNoCancel);
+                DialogResult result = MessageBox.Show("Dosyada kaydedilmemiÅŸ deÄŸiÅŸiklikler var. DeÄŸiÅŸiklikleri kaydetmek istiyor musunuz?", "UyarÄ±", MessageBoxButtons.YesNoCancel);
 
-                //Evet derse kayýt ediliyor
+                //Evet derse kayÄ±t ediliyor
                 if (result == DialogResult.Yes)
                 {
                     Kaydet();
@@ -128,12 +128,12 @@ namespace yeni
 
         private void DosyaOlustur(string dosyaUzantisi)
         {
-            //Eðer deðiþiklik yapýldýysa uyarý veriliyor
+            //EÄŸer deÄŸiÅŸiklik yapÄ±ldÄ±ysa uyarÄ± veriliyor
             if (DegisiklikYapildi)
             {
-                DialogResult result = MessageBox.Show("Dosyada kaydedilmemiþ deðiþiklikler var. Deðiþiklikleri kaydetmek istiyor musunuz?", "Uyarý", MessageBoxButtons.YesNoCancel);
+                DialogResult result = MessageBox.Show("Dosyada kaydedilmemiÅŸ deÄŸiÅŸiklikler var. DeÄŸiÅŸiklikleri kaydetmek istiyor musunuz?", "UyarÄ±", MessageBoxButtons.YesNoCancel);
 
-                //Evet derse kayýt ediliyor
+                //Evet derse kayÄ±t ediliyor
                 if (result == DialogResult.Yes)
                 {
                     Kaydet();
@@ -149,37 +149,37 @@ namespace yeni
 
 
             SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = dosyaUzantisi.ToUpper() + " Dosyalarý|*." + dosyaUzantisi;
+            saveFileDialog.Filter = dosyaUzantisi.ToUpper() + " DosyalarÄ±|*." + dosyaUzantisi;
 
 
-            //Dosya þablonlarý için dosya oluþturuluyor
+            //Dosya ÅŸablonlarÄ± iÃ§in dosya oluÅŸturuluyor
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
                 string dosyaYolu = saveFileDialog.FileName;
-                File.Create(dosyaYolu).Close(); // Dosyayý oluþtur ve kapat
-                MessageBox.Show("Yeni " + dosyaUzantisi.ToUpper() + " dosyasý oluþturuldu: " + dosyaYolu);
+                File.Create(dosyaYolu).Close(); // DosyayÄ± oluÅŸtur ve kapat
+                MessageBox.Show("Yeni " + dosyaUzantisi.ToUpper() + " dosyasÄ± oluÅŸturuldu: " + dosyaYolu);
 
-                // Dosyayý oku ve içeriðini mevcut TextBox'a ekle
+                // DosyayÄ± oku ve iÃ§eriÄŸini mevcut TextBox'a ekle
                 string icerik = "";
-                // Dosya uzantýsý cpp ise hello world þablonu yazýlýyor
+                // Dosya uzantÄ±sÄ± cpp ise hello world ÅŸablonu yazÄ±lÄ±yor
                 if (dosyaUzantisi == "cpp")
                 {
                     icerik = "// C++ Hello World\n#include <iostream>\n\nint main() {\n    std::cout << \"Hello, World!\";\n    return 0;\n}";
                 }
 
-                // Dosya uzantýsý cs ise ise hello world þablonu yazýlýyor
+                // Dosya uzantÄ±sÄ± cs ise ise hello world ÅŸablonu yazÄ±lÄ±yor
                 else if (dosyaUzantisi == "cs")
                 {
                     icerik = "// C# Hello World\nusing System;\n\nclass Program\n{\n    static void Main(string[] args)\n    {\n        Console.WriteLine(\"Hello, World!\");\n    }\n}";
                 }
 
-                // Dosya uzantýsý c ise ise hello world þablonu yazýlýyor
+                // Dosya uzantÄ±sÄ± c ise ise hello world ÅŸablonu yazÄ±lÄ±yor
                 else if (dosyaUzantisi == "c")
                 {
                     icerik = "// C Hello World\n#include <stdio.h>\n\nint main() {\n    printf(\"Hello, World!\");\n    return 0;\n}";
                 }
 
-                // Dosya uzantýsý txt ise ise hello world þablonu yazýlýyor
+                // Dosya uzantÄ±sÄ± txt ise ise hello world ÅŸablonu yazÄ±lÄ±yor
                 else if (dosyaUzantisi == "txt")
                 {
                     icerik = "Metin Belgesi";
@@ -198,22 +198,22 @@ namespace yeni
 
         }
 
-        private void açToolStripMenuItem_Click(object sender, EventArgs e)
+        private void aÃ§ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Deðiþiklik yapýldýysa if e giriyor
+            //DeÄŸiÅŸiklik yapÄ±ldÄ±ysa if e giriyor
             if (changesMade)
             {
-                DialogResult result = MessageBox.Show("Kaydedilmemiþ deðiþiklikler var. Yine de devam etmek istiyor musunuz?", "Uyarý", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                DialogResult result = MessageBox.Show("KaydedilmemiÅŸ deÄŸiÅŸiklikler var. Yine de devam etmek istiyor musunuz?", "UyarÄ±", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
-                // Kullanýcý evet derse açma iþlemini gerçekleþtir
+                // KullanÄ±cÄ± evet derse aÃ§ma iÅŸlemini gerÃ§ekleÅŸtir
                 if (result == DialogResult.Yes)
                 {
                     using (OpenFileDialog openFileDialog = new OpenFileDialog())
                     {
-                        openFileDialog.Filter = "Metin Dosyalarý (*.txt)|*.txt|Tüm Dosyalar (*.*)|*.*";
+                        openFileDialog.Filter = "Metin DosyalarÄ± (*.txt)|*.txt|TÃ¼m Dosyalar (*.*)|*.*";
                         openFileDialog.FilterIndex = 1;
 
-                        // Seçilen dosyanýn içeriðini metin kutusuna yükle
+                        // SeÃ§ilen dosyanÄ±n iÃ§eriÄŸini metin kutusuna yÃ¼kle
                         if (openFileDialog.ShowDialog() == DialogResult.OK)
                         {
 
@@ -221,26 +221,26 @@ namespace yeni
                             string dosyaIcerigi = File.ReadAllText(dosyaYolu);
                             richTextBox1.Text = dosyaIcerigi;
 
-                            // Deðiþikliklerin kaydedildiðini iþaretle
+                            // DeÄŸiÅŸikliklerin kaydedildiÄŸini iÅŸaretle
                             changesMade = false;
                         }
                     }
                 }
             }
-            //Deðiþiklik yapýlmadýysa devam ediliyor
+            //DeÄŸiÅŸiklik yapÄ±lmadÄ±ysa devam ediliyor
             else
             {
-                // Kaydedilmemiþ deðiþiklik yoksa direkt olarak dosya açma iþlemini gerçekleþtir
+                // KaydedilmemiÅŸ deÄŸiÅŸiklik yoksa direkt olarak dosya aÃ§ma iÅŸlemini gerÃ§ekleÅŸtir
                 using (OpenFileDialog openFileDialog = new OpenFileDialog())
                 {
-                    // Sadece metin dosyalarýný seçilebilir yap
-                    openFileDialog.Filter = "Metin Dosyalarý (*.txt)|*.txt|Tüm Dosyalar (*.*)|*.*";
+                    // Sadece metin dosyalarÄ±nÄ± seÃ§ilebilir yap
+                    openFileDialog.Filter = "Metin DosyalarÄ± (*.txt)|*.txt|TÃ¼m Dosyalar (*.*)|*.*";
                     openFileDialog.FilterIndex = 1;
 
-                    // Seçilen dosyanýn içeriðini metin kutusuna yükle
+                    // SeÃ§ilen dosyanÄ±n iÃ§eriÄŸini metin kutusuna yÃ¼kle
                     if (openFileDialog.ShowDialog() == DialogResult.OK)
                     {
-                        // Seçilen dosyanýn içeriðini metin kutusuna yükle
+                        // SeÃ§ilen dosyanÄ±n iÃ§eriÄŸini metin kutusuna yÃ¼kle
                         string dosyaYolu = openFileDialog.FileName;
                         string dosyaIcerigi = File.ReadAllText(dosyaYolu);
                         richTextBox1.Text = dosyaIcerigi;
@@ -251,15 +251,15 @@ namespace yeni
 
         }
 
-        private void yazýFontuToolStripMenuItem_Click(object sender, EventArgs e)
+        private void yazÄ±FontuToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ColorDialog renkDialog = new ColorDialog();
-            renkDialog.AllowFullOpen = false; // Kullanýcýnýn renk kodunu elle girmesine izin verme
-            renkDialog.AnyColor = true; // Kullanýcýya tüm renkleri göster
-            renkDialog.SolidColorOnly = true; // Sadece tek renk seçimine izin ver
-            renkDialog.CustomColors = new int[] { 0xFF0000, 0x00FF00, 0x0000FF }; // Önceden tanýmlanmýþ bazý renkler
+            renkDialog.AllowFullOpen = false; // KullanÄ±cÄ±nÄ±n renk kodunu elle girmesine izin verme
+            renkDialog.AnyColor = true; // KullanÄ±cÄ±ya tÃ¼m renkleri gÃ¶ster
+            renkDialog.SolidColorOnly = true; // Sadece tek renk seÃ§imine izin ver
+            renkDialog.CustomColors = new int[] { 0xFF0000, 0x00FF00, 0x0000FF }; // Ã–nceden tanÄ±mlanmÄ±ÅŸ bazÄ± renkler
 
-            // Seçilen rengi al ve zemin rengini ayarla
+            // SeÃ§ilen rengi al ve zemin rengini ayarla
             if (renkDialog.ShowDialog() == DialogResult.OK)
             {
                 richTextBox1.BackColor = renkDialog.Color;
@@ -276,29 +276,29 @@ namespace yeni
         {
 
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.Filter = "Metin Belgesi|*.txt|C++ Dosyasý|*.cpp|C# Dosyasý|*.cs|C Dosyasý|*.c";
+            saveFileDialog1.Filter = "Metin Belgesi|*.txt|C++ DosyasÄ±|*.cpp|C# DosyasÄ±|*.cs|C DosyasÄ±|*.c";
 
-            // Eðer kullanýcý dosya kaydetmeyi seçtiyse (DialogResult.OK sonucu döndüyse), Seçilen dosyanýn yolunu alýp, richTextBox1 kontrolündeki metni bu dosyaya yazýlýyor
+            // EÄŸer kullanÄ±cÄ± dosya kaydetmeyi seÃ§tiyse (DialogResult.OK sonucu dÃ¶ndÃ¼yse), SeÃ§ilen dosyanÄ±n yolunu alÄ±p, richTextBox1 kontrolÃ¼ndeki metni bu dosyaya yazÄ±lÄ±yor
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 File.WriteAllText(saveFileDialog1.FileName, richTextBox1.Text);
                 dosyaKaydedildi = true;
-                MessageBox.Show("Deðiþiklikler kaydedildi.");
+                MessageBox.Show("DeÄŸiÅŸiklikler kaydedildi.");
             }
 
             Kaydet();
 
         }
 
-        private void yazýÇeþitiToolStripMenuItem_Click(object sender, EventArgs e)
+        private void yazÄ±Ã‡eÅŸitiToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FontDialog fontDialog = new FontDialog();
-            fontDialog.FontMustExist = true; // Kullanýcýnýn bilgisayarýndan olmayan bir font seçmesini engelle
+            fontDialog.FontMustExist = true; // KullanÄ±cÄ±nÄ±n bilgisayarÄ±ndan olmayan bir font seÃ§mesini engelle
 
-            // Seçilen fontu al ve yazý çeþitlerini ayarla
+            // SeÃ§ilen fontu al ve yazÄ± Ã§eÅŸitlerini ayarla
             if (fontDialog.ShowDialog() == DialogResult.OK)
             {
-                // Seçilen fontu al ve yazý çeþitlerini ayarla
+                // SeÃ§ilen fontu al ve yazÄ± Ã§eÅŸitlerini ayarla
                 richTextBox1.SelectionFont = fontDialog.Font;
             }
 
@@ -307,21 +307,21 @@ namespace yeni
         private void kaydetToolStripButton_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.Filter = "Metin Belgesi|*.txt|C++ Dosyasý|*.cpp|C# Dosyasý|*.cs|C Dosyasý|*.c";
+            saveFileDialog1.Filter = "Metin Belgesi|*.txt|C++ DosyasÄ±|*.cpp|C# DosyasÄ±|*.cs|C DosyasÄ±|*.c";
 
 
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 File.WriteAllText(saveFileDialog1.FileName, richTextBox1.Text);
                 dosyaKaydedildi = true;
-                MessageBox.Show("Deðiþiklikler kaydedildi.");
+                MessageBox.Show("DeÄŸiÅŸiklikler kaydedildi.");
             }
             Kaydet();
 
 
         }
 
-        private void yazdýrToolStripMenuItem_Click(object sender, EventArgs e)
+        private void yazdÄ±rToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using (PrintDialog printDialog = new PrintDialog())
             {
@@ -329,7 +329,7 @@ namespace yeni
 
                 if (printDialog.ShowDialog() == DialogResult.OK)
                 {
-                    // Kullanýcý yazdýrmayý onayladýðýnda, belgeyi yazdýr
+                    // KullanÄ±cÄ± yazdÄ±rmayÄ± onayladÄ±ÄŸÄ±nda, belgeyi yazdÄ±r
                     printDocument.Print();
                 }
             }
@@ -349,7 +349,7 @@ namespace yeni
 
             totalLines = text.Split('\n').Length;
 
-            // Yazdýrma iþlemi yapýlýyor
+            // YazdÄ±rma iÅŸlemi yapÄ±lÄ±yor
             while (totalLines > 0 && charactersOnPage > 0)
             {
                 yPos = e.MarginBounds.Top + (linesPerPage - totalLines) * font.Height;
@@ -360,20 +360,20 @@ namespace yeni
 
                 startIndex += linesPerPage;
 
-                // Sayfa sonu kontrolü
+                // Sayfa sonu kontrolÃ¼
                 if (totalLines > 0)
                     e.HasMorePages = true;
             }
         }
 
-        private void çýkýþToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Ã§Ä±kÄ±ÅŸToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //Eðer deðiþiklik yapýldýysa uyarý veriliyor
+            //EÄŸer deÄŸiÅŸiklik yapÄ±ldÄ±ysa uyarÄ± veriliyor
             if (changesMade)
             {
-                DialogResult result = MessageBox.Show("Kaydedilmemiþ deðiþiklikler var. Yine de devam etmek istiyor musunuz?", "Uyarý", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                DialogResult result = MessageBox.Show("KaydedilmemiÅŸ deÄŸiÅŸiklikler var. Yine de devam etmek istiyor musunuz?", "UyarÄ±", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
-                // Kullanýcý evet derse açma iþlemini gerçekleþtir
+                // KullanÄ±cÄ± evet derse aÃ§ma iÅŸlemini gerÃ§ekleÅŸtir
                 if (result == DialogResult.Yes)
                 {
                     Application.Exit();
@@ -406,56 +406,56 @@ namespace yeni
             richTextBox1.Copy();
         }
 
-        private void yapýþtýrToolStripMenuItem_Click(object sender, EventArgs e)
+        private void yapÄ±ÅŸtÄ±rToolStripMenuItem_Click(object sender, EventArgs e)
         {
             richTextBox1.Paste();
         }
 
-        private void tümünüSeçToolStripMenuItem_Click(object sender, EventArgs e)
+        private void tÃ¼mÃ¼nÃ¼SeÃ§ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             richTextBox1.SelectAll();
         }
 
-        private void yazýRengiToolStripMenuItem_Click(object sender, EventArgs e)
+        private void yazÄ±RengiToolStripMenuItem_Click(object sender, EventArgs e)
         {
             {
-                // Renk seçme iletiþim kutusunu göster
+                // Renk seÃ§me iletiÅŸim kutusunu gÃ¶ster
                 ColorDialog renkDialog = new ColorDialog();
-                renkDialog.AllowFullOpen = false; // Kullanýcýnýn renk kodunu elle girmesine izin verme
-                renkDialog.AnyColor = true; // Kullanýcýya tüm renkleri göster
-                renkDialog.SolidColorOnly = true; // Sadece tek renk seçimine izin ver
-                renkDialog.CustomColors = new int[] { 0xFF0000, 0x00FF00, 0x0000FF }; // Önceden tanýmlanmýþ bazý renkler
+                renkDialog.AllowFullOpen = false; // KullanÄ±cÄ±nÄ±n renk kodunu elle girmesine izin verme
+                renkDialog.AnyColor = true; // KullanÄ±cÄ±ya tÃ¼m renkleri gÃ¶ster
+                renkDialog.SolidColorOnly = true; // Sadece tek renk seÃ§imine izin ver
+                renkDialog.CustomColors = new int[] { 0xFF0000, 0x00FF00, 0x0000FF }; // Ã–nceden tanÄ±mlanmÄ±ÅŸ bazÄ± renkler
 
                 if (renkDialog.ShowDialog() == DialogResult.OK)
                 {
-                    // Seçilen rengi al ve yazý rengini ayarla
+                    // SeÃ§ilen rengi al ve yazÄ± rengini ayarla
                     richTextBox1.ForeColor = renkDialog.Color;
                 }
             }
         }
 
-        private void dýþarýdanAktarToolStripMenuItem_Click(object sender, EventArgs e)
+        private void dÄ±ÅŸarÄ±danAktarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Yazý Tipi Dosyalarý|*.ttf;*.otf|Tüm Dosyalar|*.*";
+            openFileDialog.Filter = "YazÄ± Tipi DosyalarÄ±|*.ttf;*.otf|TÃ¼m Dosyalar|*.*";
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                // Seçilen dosyadan yazý tipini yükle
+                // SeÃ§ilen dosyadan yazÄ± tipini yÃ¼kle
                 try
                 {
                     PrivateFontCollection privateFonts = new PrivateFontCollection();
                     privateFonts.AddFontFile(openFileDialog.FileName);
 
-                    // Ýlk yazý tipini al (kullanýcý birden fazla yazý tipi yükleyebilir)
+                    // Ä°lk yazÄ± tipini al (kullanÄ±cÄ± birden fazla yazÄ± tipi yÃ¼kleyebilir)
                     Font yeniFont = new Font(privateFonts.Families[0], 12);
 
-                    // Seçili metne yeni yazý tipini uygula
+                    // SeÃ§ili metne yeni yazÄ± tipini uygula
                     richTextBox1.SelectionFont = yeniFont;
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Yazý tipi yüklenirken bir hata oluþtu: " + ex.Message);
+                    MessageBox.Show("YazÄ± tipi yÃ¼klenirken bir hata oluÅŸtu: " + ex.Message);
                 }
             }
         }
@@ -465,30 +465,30 @@ namespace yeni
 
         }
 
-        private void açToolStripButton_Click(object sender, EventArgs e)
+        private void aÃ§ToolStripButton_Click(object sender, EventArgs e)
         {
             if (changesMade)
             {
-                DialogResult result = MessageBox.Show("Kaydedilmemiþ deðiþiklikler var. Yine de devam etmek istiyor musunuz?", "Uyarý", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                DialogResult result = MessageBox.Show("KaydedilmemiÅŸ deÄŸiÅŸiklikler var. Yine de devam etmek istiyor musunuz?", "UyarÄ±", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
-                // Kullanýcý evet derse açma iþlemini gerçekleþtir
+                // KullanÄ±cÄ± evet derse aÃ§ma iÅŸlemini gerÃ§ekleÅŸtir
                 if (result == DialogResult.Yes)
                 {
-                    // Açma iþlemi için dosya seçme iletiþim kutusunu göster
+                    // AÃ§ma iÅŸlemi iÃ§in dosya seÃ§me iletiÅŸim kutusunu gÃ¶ster
                     using (OpenFileDialog openFileDialog = new OpenFileDialog())
                     {
-                        // Sadece metin dosyalarýný seçilebilir yap
-                        openFileDialog.Filter = "Metin Dosyalarý (*.txt)|*.txt|Tüm Dosyalar (*.*)|*.*";
+                        // Sadece metin dosyalarÄ±nÄ± seÃ§ilebilir yap
+                        openFileDialog.Filter = "Metin DosyalarÄ± (*.txt)|*.txt|TÃ¼m Dosyalar (*.*)|*.*";
                         openFileDialog.FilterIndex = 1;
 
                         if (openFileDialog.ShowDialog() == DialogResult.OK)
                         {
-                            // Seçilen dosyanýn içeriðini metin kutusuna yükle
+                            // SeÃ§ilen dosyanÄ±n iÃ§eriÄŸini metin kutusuna yÃ¼kle
                             string dosyaYolu = openFileDialog.FileName;
                             string dosyaIcerigi = File.ReadAllText(dosyaYolu);
                             richTextBox1.Text = dosyaIcerigi;
 
-                            // Deðiþikliklerin kaydedildiðini iþaretle
+                            // DeÄŸiÅŸikliklerin kaydedildiÄŸini iÅŸaretle
                             changesMade = false;
                         }
                     }
@@ -496,16 +496,16 @@ namespace yeni
             }
             else
             {
-                // Kaydedilmemiþ deðiþiklik yoksa direkt olarak dosya açma iþlemini gerçekleþtir
+                // KaydedilmemiÅŸ deÄŸiÅŸiklik yoksa direkt olarak dosya aÃ§ma iÅŸlemini gerÃ§ekleÅŸtir
                 using (OpenFileDialog openFileDialog = new OpenFileDialog())
                 {
-                    // Sadece metin dosyalarýný seçilebilir yap
-                    openFileDialog.Filter = "Metin Dosyalarý (*.txt)|*.txt|Tüm Dosyalar (*.*)|*.*";
+                    // Sadece metin dosyalarÄ±nÄ± seÃ§ilebilir yap
+                    openFileDialog.Filter = "Metin DosyalarÄ± (*.txt)|*.txt|TÃ¼m Dosyalar (*.*)|*.*";
                     openFileDialog.FilterIndex = 1;
 
                     if (openFileDialog.ShowDialog() == DialogResult.OK)
                     {
-                        // Seçilen dosyanýn içeriðini metin kutusuna yükle
+                        // SeÃ§ilen dosyanÄ±n iÃ§eriÄŸini metin kutusuna yÃ¼kle
                         string dosyaYolu = openFileDialog.FileName;
                         string dosyaIcerigi = File.ReadAllText(dosyaYolu);
                         richTextBox1.Text = dosyaIcerigi;
@@ -514,13 +514,13 @@ namespace yeni
             }
         }
 
-        private void yazdýrToolStripButton_Click(object sender, EventArgs e)
+        private void yazdÄ±rToolStripButton_Click(object sender, EventArgs e)
         {
             using (PrintDialog printDialog = new PrintDialog())
             {
                 printDialog.Document = printDocument;
 
-                // Kullanýcý yazdýrmayý onaylarsa belge yazýlýyor
+                // KullanÄ±cÄ± yazdÄ±rmayÄ± onaylarsa belge yazÄ±lÄ±yor
                 if (printDialog.ShowDialog() == DialogResult.OK)
                 {
 
@@ -539,7 +539,7 @@ namespace yeni
             richTextBox1.Copy();
         }
 
-        private void yapýþtýrToolStripButton_Click(object sender, EventArgs e)
+        private void yapÄ±ÅŸtÄ±rToolStripButton_Click(object sender, EventArgs e)
         {
             richTextBox1.Paste();
         }
@@ -551,7 +551,7 @@ namespace yeni
 
             int wordStartIndex = richTextBox1.Find(word, startIndex, RichTextBoxFinds.None);
 
-            // Eðer kelime bulunduysa gösteriliyor
+            // EÄŸer kelime bulunduysa gÃ¶steriliyor
             if (wordStartIndex != -1)
             {
                 richTextBox1.Select(wordStartIndex, word.Length);
@@ -559,7 +559,7 @@ namespace yeni
             }
             else
             {
-                MessageBox.Show("Kelime bulunamadý!");
+                MessageBox.Show("Kelime bulunamadÄ±!");
             }
         }
 
@@ -571,15 +571,15 @@ namespace yeni
             SearchWord(aranacakKelime);
         }
 
-        private void farklýKaydetToolStripMenuItem_Click(object sender, EventArgs e)
+        private void farklÄ±KaydetToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
-            saveFileDialog1.Filter = "Metin Belgesi|*.txt|C++ Dosyasý|*.cpp|C# Dosyasý|*.cs|C Dosyasý|*.c";
+            saveFileDialog1.Filter = "Metin Belgesi|*.txt|C++ DosyasÄ±|*.cpp|C# DosyasÄ±|*.cs|C DosyasÄ±|*.c";
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 File.WriteAllText(saveFileDialog1.FileName, richTextBox1.Text);
                 dosyaKaydedildi = true;
-                MessageBox.Show("Deðiþiklikler kaydedildi.");
+                MessageBox.Show("DeÄŸiÅŸiklikler kaydedildi.");
 
             }
             Kaydet();
@@ -616,7 +616,7 @@ namespace yeni
             richTextBox1.Copy();
         }
 
-        private void yapýþtýrToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void yapÄ±ÅŸtÄ±rToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             richTextBox1.Paste();
         }
@@ -626,7 +626,7 @@ namespace yeni
             richTextBox1.SelectedText = "";
         }
 
-        private void tümünüSeçToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void tÃ¼mÃ¼nÃ¼SeÃ§ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             richTextBox1.SelectAll();
         }
